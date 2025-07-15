@@ -2,7 +2,7 @@
   "name": "react-portfolio-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yujisatojr.github.io/react-portfolio-template",
+  "homepage": ".",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.11.4",
@@ -20,7 +20,6 @@
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.98",
     "@types/react-dom": "^18.3.0",
-    "gatsby-plugin-sharp": "^5.14.0",
     "lucide-react": "^0.525.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -58,6 +57,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.23",
-    "@types/react-vertical-timeline-component": "^3.3.6"
+    "@types/react-vertical-timeline-component": "^3.3.6",
+    "gh-pages": "^6.3.0"
   }
 }
