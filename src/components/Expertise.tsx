@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faChartLine, faRobot, faServer } from '@fortawesome/free-solid-svg-icons'; // ✅ Fix here
+import { faChartLine, faRobot, faServer } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
