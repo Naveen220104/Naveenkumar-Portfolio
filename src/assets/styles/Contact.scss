@@ -1,48 +1,110 @@
-.contact_wrapper svg {
-  font-size: 1em;
-  vertical-align: middle;
-  margin-right: 5px;
-}
+#contact {
+  background-color: #0e0e11;
+  background-image: url("../images/bg-dark.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  padding: 4rem 10% 3rem;
+  color: #fff;
 
-.contact-form {
-  padding-top: 20px;
-
-  button {
-    float: right;
-    background-color: white;
-    color: #050f0b;
+  .items-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  button:hover {
-    background-color: #5000ca;
-    color: white;
+  .contact_wrapper {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    button {
+      align-self: flex-end;
+      background-color: #ffffff;
+      color: #0e0e11;
+      font-weight: bold;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #5000ca;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .form-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .MuiFormControl-root {
+      flex: 1;
+    }
+  }
+
+  .body-form {
+    width: 100%;
+  }
+}
+
+/* Make text and input fields readable in dark mode */
+.MuiOutlinedInput-root {
+  background-color: #1c1c1c !important;
+  color: #ffffff !important;
+
+  input,
+  textarea {
+    color: #ffffff !important;
   }
 
   fieldset {
-    background-color: white;
+    border-color: #444 !important;
+  }
+
+  &:hover fieldset {
+    border-color: #666 !important;
+  }
+
+  &.Mui-focused fieldset {
+    border-color: #5000ca !important;
   }
 }
 
-label {
-  font-size: 1.2rem;
-  font-family: 'DomaineDispNar-Medium', sans-serif;
+.MuiInputLabel-root {
+  color: #ccc !important;
 }
 
-.form-flex {
-  display: flex;
-  gap: 15px;
-  padding-bottom: 15px;
-}
+@media (max-width: 768px) {
+  #contact {
+    padding: 3rem 5% 2rem;
 
-.form-flex .MuiFormControl-root {
-  width: 100%;
-}
+    .form-flex {
+      flex-direction: column;
+    }
 
-form {
-  width: 100% !important;
-}
-
-.body-form {
-  width: 100% !important;
-  margin-bottom: 15px !important;
+    .contact_wrapper h1 {
+      font-size: 2rem;
+    }
+  }
 }
